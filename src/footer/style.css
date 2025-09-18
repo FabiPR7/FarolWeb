@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer h3 {
+    color: #AAAAAA;
+    margin: 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer h3:hover {
+    color: #ffffff;
+}
