@@ -13,8 +13,8 @@ h2{
 .imgbody {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    width: 60%;
+    max-width: 60%; 
+    width: 100%;
     height: auto;
     padding-top: 3%;
 }
