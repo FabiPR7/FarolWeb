@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import img from "../../media/img/conectamos.png"
+import img from "../../../media/img/conectamos.png"
 
 const Body = () => {
   return (

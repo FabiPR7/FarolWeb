@@ -1,7 +1,8 @@
 .textOpacity{
     text-align: center;
-    opacity: 30%;
+    opacity: 100%;
     padding-top: 2%;
+    color: #3C3737;
 }
 h2{
     padding-top: 2%;

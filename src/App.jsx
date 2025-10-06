@@ -1,22 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Section from './section1/section' 
-import Section2 from './section2/section2'
-import Section3 from './section3/section3'
-import Footer from './footer/footer'
+import { Routes, Route, Link, Navigate } from 'react-router-dom'
+import Login from './app/login/login'
+import Landing from './landing/main'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Section/>
-    <Section2/>
-    <Section3/>
-    <Footer/>
-     </>
+      <Routes>
+        <Route path="/" element={<Navigate to="/web" replace />} />
+        <Route path="/web" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </>
   )
 }
 

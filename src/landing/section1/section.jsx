@@ -5,7 +5,7 @@ import Body from './body/body'
 
 const Section = () => {
   return (
-    <section className='section'>
+    <section className='section' id="inicio">
       <Header/>
       <Body/>
     </section>
