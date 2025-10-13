@@ -1,9 +1,9 @@
 import React from 'react'
 import "./style.css"
 import logo from "../../media/img/Farol-removebg-preview.png"
-const Login = () => {
+const SignIn = () => {
   return (
-    <div className='login-page'>
+    <div className='sign-in-page'>
       <h1 className='textOpacity'>Tu Faro en el mundo del freelance</h1>
       <div className='login-container'>
         <div className='login-title'>
@@ -15,6 +15,8 @@ const Login = () => {
           <label for="email">Email</label>
           <input type="password" id='password' />
           <label for="password">Contraseña</label> 
+          <input type="password" id='confirm-password' />
+          <label for="confirm-password">Confirma contraseña</label> 
           <div className='login-buttons'>
             <button className='buttonOptions'>Iniciar sesión</button>
             <button className='buttonOptions'>Registrarse</button>
@@ -26,4 +28,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignIn

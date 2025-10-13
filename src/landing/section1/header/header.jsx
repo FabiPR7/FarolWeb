@@ -1,8 +1,10 @@
 import React from 'react'
 import logo from '../../../media/img/Farol-removebg-preview.png'
 import "./style.css"
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -18,8 +20,8 @@ const Header = () => {
         <h4 onClick={() => scrollToSection('quienes-somos')}>¿Quiénes somos?</h4>
       </div>
       <div className='buttons'>
-      <h3 className='signin buttonHeader'>Sign-In</h3>
-      <h3 className='login buttonHeader'>Login</h3>
+      <h3 className='signin buttonHeader'  onClick={() => navigate("/sign-page")} >Sign-In</h3>
+      <h3 className='login buttonHeader'  onClick={() => navigate("/login-page")}>Login</h3>
       </div>
     </div>
   )
