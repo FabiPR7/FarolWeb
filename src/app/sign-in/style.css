@@ -3,24 +3,24 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	font-family:fantasy;
+	font-family: fantasy;
 	user-select: none;
-    background-color: #AAAAAA;
-    color: #2D2D2D;
+	background-color: #AAAAAA;
+	color: #2D2D2D;
 }
 
-.login-title {
+.sign-title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 40%;
 	height: 100%;
-    color: #2D2D2D;
+	color: #2D2D2D;
 }
 
-.title-text{
-    color: #2D2D2D;
+.title-text-sign {
+	color: #2D2D2D;
 	font-size: 250%;
 }
 
@@ -34,24 +34,26 @@
 	user-select: none;
 }
 
-.login-container {
+.sign-container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 10%;
 }
 
-.login-form {
+.sign-form {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
 }
 
-.login-form input {
-	padding-top: 20%;
+.sign-form input {
+	padding-top: 10%;
 	width: 100%;
 	border: none;
-	border-bottom: 3px solid #2D2D2D;;
+	color: #2D2D2D;
+	border-bottom: 3px solid #2D2D2D;
+	;
 	background: transparent;
 	outline: none;
 	text-align: center;
@@ -61,56 +63,59 @@
 
 
 
-.login-form label {
+.sign-form label {
 	display: block;
 	text-align: center;
-    color: #2D2D2D;
+	color: #2D2D2D;
 	letter-spacing: 0.5px;
 	margin-top: 4%;
 	font-size: 150%;
 	font-weight: bold;
 
 }
-.login-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 10%;
+
+
+.sign-button {
 	font-size: 150%;
-}
-
-
-.buttonOptions{
-	font-size: 120%;
-	font-family:fantasy;
+	font-family: fantasy;
 	background-color: #D9D9D9;
-	padding: 3%;
+	padding: 0.5em 1em;
 	color: black;
 	transition: 0.2s ease-in-out;
+	width: auto;
+	display: inline-block;
+	align-self: center;
+	box-sizing: border-box;
+	margin-top: 10%;
 }
-.buttonOptions:hover{
+
+.sign-button:hover {
 	color: #D9D9D9;
 	background-color: black;
 
 }
-.without-password {
+
+.account-created {
 	position: relative;
-	display: inline-block; /* mantiene el tamaño justo del texto */
+    display: block; 
 	cursor: pointer;
-	margin: 2rem auto 0; /* centra el elemento */
-  }
-  
-  .without-password::after {
-	content: "";
+    margin:  1% auto; 
+    width: fit-content; 
+    flex: 0 0 auto; 
+}
+
+.account-created::after {
+    content: "";
 	position: absolute;
 	left: 0;
-	bottom: 0; /* ajusta según el tamaño del texto */
+	bottom: 0;
+
 	width: 0;
-	height: 2px; /* grosor de la línea */
-	background-color: currentColor; /* usa el color del texto */
+    height: 2px; 
+	background-color: currentColor;
 	transition: width 0.3s ease-in-out;
-  }
-  
-  .without-password:hover::after {
+}
+
+.account-created:hover::after {
 	width: 100%;
-  }
+}

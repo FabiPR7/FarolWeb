@@ -6,7 +6,7 @@ const Body = () => {
   return (
     <div className='body'>
       <h1 className='textOpacity'>Tu Faro en el mundo del freelance</h1>
-      <h2>
+      <h2 className='textOptional'>
         ¿Necesitas a alguien para un proyecto puntual o buscas trabajo como freelancer?
         Farol es la plataforma que te conecta de forma rápida y sencilla.
       </h2>

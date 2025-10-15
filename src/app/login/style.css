@@ -93,19 +93,22 @@
 }
 .without-password {
 	position: relative;
-	display: inline-block; /* necesario para el pseudo-elemento */
+    display: block; 
 	text-align: center;
 	cursor: pointer;
+    width: fit-content; 
+    flex: 0 0 auto; 
+    margin: 0 auto; 
   }
   
   .without-password::after {
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: 0; /* ajusta según el tamaño del texto */
+	bottom: 0; 
 	width: 0;
-	height: 2px; /* grosor de la línea */
-	background-color: currentColor; /* usa el color del texto */
+	height: 2px; 
+	background-color: currentColor; 
 	transition: width 0.3s ease-in-out;
   }
   
